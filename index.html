@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RH Bayren Parc - Asistente Virtual</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="chatbot-container">
+        <div id="chat-header">
+            RH Bayren Parc - Asistente Virtual
+        </div>
+        <div id="chat-avatar">
+            <img src="./RH-Bot.png" alt="Chatbot RH" />
+        </div>
+        <div id="chat-window">
+            <div id="chat-output">
+                <div class="chat-message bot">
+                    ¡Hola! Soy el asistente virtual de RH Bayren Parc. ¿En qué puedo ayudarte? Selecciona una opción:
+                </div>
+            </div>
+        </div>
+        <div id="options-container">
+            <!-- Opciones principales -->
+            <button class="option" data-option="hotel-info">Información del Hotel</button>
+            <button class="option" data-link="https://www.lasprovincias.es/planes/playas/valencia-valencia/nord-0000317.html">Información Bandera de Playa Hoy</button>
+            <button class="option" data-link="https://g.page/r/CYwQCiqTRq0HEAE/review">Escribir una Reseña en Google</button>
+            <button class="option" data-link="https://visitgandia.com/gnd/web_php/index.php">Intereses en Gandía</button>
+            <button class="option" data-link="https://www.visitgandia.com/pag/4488/rutas-y-excursiones.html">Senderismo Local</button>
+            <button class="option" data-link="https://blog.hotelesrh.com/category/responsabilidad-social-corporativa/">Responsabilidad Social</button>
+            <!-- Nuevo botón para realizar una reserva -->
+            <button class="option" onclick="window.open('https://www.hotelrhbayrenparc.com/?gad_source=1&gclid=CjwKCAjwtdi_BhACEiwA97y8BPoJEmPMiAqloR33gyfdtqxtF2AFOnxadBVBFJE9mp0fMqp_1aN2yhoCEJ8QAvD_BwE', '_blank')">
+                Quiero realizar una nueva reserva
+            </button>
+        </div>
+    </div>
+    <script src="chatbot.js"></script>
+</body>
+</html>

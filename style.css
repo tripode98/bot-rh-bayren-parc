@@ -1,0 +1,114 @@
+/* Estilo para el chatbot */
+body {
+    background: linear-gradient(135deg, #87CEFA, #E6F7FF);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+#chatbot-container {
+    width: 350px;
+    border: 2px solid #87cefa;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+#chat-header {
+    background-color: #87cefa;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#chat-avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    position: relative;
+}
+
+#chat-avatar img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #87cefa;
+    background-color: #E6F7FF;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#chat-window {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    border-bottom: 2px solid #87cefa;
+    max-height: 400px;
+}
+
+.chat-message {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    word-wrap: break-word;
+}
+
+.bot {
+    background-color: #e6f7ff;
+    text-align: left;
+}
+
+.user {
+    background-color: #d1e7dd;
+    text-align: right;
+}
+
+#options-container {
+    padding: 10px;
+    border-top: 2px solid #87cefa;
+    background-color: #f9f9f9;
+}
+
+.option {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #87cefa;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.option:hover {
+    background-color: #4682b4;
+}
+
+.back-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #d3d3d3;
+    color: #000;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.back-button:hover {
+    background-color: #c0c0c0;
+}
