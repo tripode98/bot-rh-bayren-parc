@@ -1,0 +1,119 @@
+/* Estilo para el chatbot */
+body {
+    background: linear-gradient(135deg, #38A69D, #E6F7FF); /* Turquesa y blanco */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+#chatbot-container {
+    width: 350px;
+    border: 2px solid #38A69D; /* Turquesa */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background-color: #fff; /* Blanco */
+    display: flex;
+    flex-direction: column;
+}
+
+#chat-header {
+    background-color: #38A69D; /* Turquesa */
+    color: #fff; /* Blanco */
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#chat-avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9; /* Gris claro */
+    padding: 20px;
+    position: relative;
+}
+
+#chat-avatar img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #38A69D; /* Turquesa */
+    background-color: #E6F7FF; /* Blanco muy claro */
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#chat-window {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    border-bottom: 2px solid #38A69D; /* Turquesa */
+    max-height: 400px;
+}
+
+.chat-message {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    word-wrap: break-word;
+    font-size: 14px;
+}
+
+.bot {
+    background-color: #D5F5E3; /* Verde claro */
+    text-align: left;
+    color: #000; /* Negro */
+}
+
+.user {
+    background-color: #AED6F1; /* Azul turquesa claro */
+    text-align: right;
+    color: #000; /* Negro */
+}
+
+#options-container {
+    padding: 10px;
+    border-top: 2px solid #38A69D; /* Turquesa */
+    background-color: #f9f9f9; /* Gris claro */
+}
+
+.option {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #38A69D; /* Turquesa */
+    color: #fff; /* Blanco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 14px;
+}
+
+.option:hover {
+    background-color: #1F7A72; /* Turquesa más oscuro */
+}
+
+.back-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #D5D8DC; /* Gris claro neutro */
+    color: #000; /* Negro */
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+}
+
+.back-button:hover {
+    background-color: #BFC9CA; /* Gris neutro más oscuro */
+}
